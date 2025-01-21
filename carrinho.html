@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carrinho de Compras - Jardim Encantado">
+    <meta name="author" content="Jardim Encantado">
+    <title>Carrinho de Compras - Jardim Encantado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Carrinho de Compras - Jardim Encantado</h1>
+    </header>
+
+    <section id="itens-carrinho">
+        <h2>Itens no Carrinho</h2>
+        <ul id="lista-itens">
+            <!-- Itens serão carregados dinamicamente -->
+        </ul>
+        <p>Total: <span id="total-carrinho">R$ 0,00</span></p>
+    </section>
+
+    <!-- Finalizar Compra -->
+    <section id="finalizar-compra">
+        <h2>Finalizar Compra</h2>
+        <p>Você pode concluir sua compra utilizando o seguinte link de pagamento:</p>
+
+        <iframe src="https://www.exemplo.com/pagamento" width="600" height="400" frameborder="0" allowfullscreen></iframe>
+
+        <p>Ou clique abaixo para ser redirecionado para o pagamento:</p>
+        <a href="https://www.exemplo.com/pagamento" target="_blank">
+            <button>Finalizar Compra</button>
+        </a>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
