@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversario 1 Ano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <h1>Aniversario 1 Ano</h1>
+
+    <!-- Foto da aniversariante -->
+    <div id="foto-aniversariante">
+        <img src="images/foto-aniversariante.jpg" alt="Foto da Aniversariante">
+    </div>
+
+    <p>Bem-vindo ao seu Jardim Encantado! Escolha seus presentes e adicione ao seu carrinho.</p>
+
+    <!-- Carrinho -->
+    <div id="carrinho">
+        Carrinho: <span class="numero-itens">0</span> itens
+    </div>
+
+    <!-- Lista de produtos -->
+    <div class="lista-produtos">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="images/produto1.jpg" alt="Produto 1">
+            <h3>Produto 1</h3>
+            <p>Descrição do produto encantado.</p>
+            <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="images/produto2.jpg" alt="Produto 2">
+            <h3>Produto 2</h3>
+            <p>Descrição do produto mágico.</p>
+            <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="images/produto3.jpg" alt="Produto 3">
+            <h3>Produto 3</h3>
+            <p>Descrição do presente encantado.</p>
+            <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
