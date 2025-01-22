@@ -65,12 +65,9 @@ h2 {
     color: #fff;
 }
 
-.photo {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 20px;
+h3 {
+    font-size: 1.5em;
+    color: #FF1493; /* Rosa mais escuro */
 }
 
 /* Layout de produtos */
@@ -105,11 +102,6 @@ h2 {
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
-}
-
-.produto h3 {
-    font-size: 1.5em;
-    color: #FF1493; /* Rosa mais escuro */
 }
 
 .produto p {
