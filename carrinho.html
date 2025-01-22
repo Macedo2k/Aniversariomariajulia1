@@ -1,56 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Carrinho de Compras">
-    <meta name="author" content="Jardim Encantado">
     <title>Carrinho de Compras</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Carrinho de Compras</h1>
-    </header>
-
-    <section id="itens-carrinho">
-        <h2>Itens no Carrinho</h2>
-        <div id="lista-itens-carrinho">
-            <!-- Itens serão gerados dinamicamente pelo JavaScript -->
-        </div>
-        <div id="total">
-            <h3>Total: <span id="valor-total">R$ 0,00</span></h3>
-        </div>
-    </section>
-
-    <section>
-        <button id="botao-pagamento">Finalizar Compra</button>
-    </section>
-
-    <script>
-        // Carrinho com itens
-        const itensCarrinho = [1, 3, 5, 7, 8]; // IDs dos produtos no carrinho
-        const listaItensCarrinho = document.querySelector('#lista-itens-carrinho');
-        const valorTotal = document.querySelector('#valor-total');
-
-        // Adicionando produtos ao carrinho
-        const produtosCarrinho = itensCarrinho.map(id => produtos.find(p => p.id === id));
-        
-        let total = 0;
-        produtosCarrinho.forEach(produto => {
-            const itemDiv = document.createElement('div');
-            itemDiv.textContent = `${produto.nome} - R$ 50,00`;
-            listaItensCarrinho.appendChild(itemDiv);
-            total += 50; // Simulação de preço fixo para cada produto
-        });
-
-        valorTotal.textContent = `R$ ${total},00`;
-
-        // Finalizar compra
-        document.querySelector('#botao-pagamento').addEventListener('click', () => {
-            alert('Compra finalizada com sucesso! Obrigado!');
-            // Redirecionar para um sistema de pagamento real aqui
-        });
-    </script>
+    <div class="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <iframe id="iframe-carrinho" width="100%" height="300px"></iframe>
+    </div>
 </body>
 </html>
